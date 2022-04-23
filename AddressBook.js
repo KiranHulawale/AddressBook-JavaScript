@@ -175,7 +175,6 @@ try {
     let person2 = new Person("Amol", "Sonar", "Solapur", "Solapur", "Maharashtra", 422032, "91 8540355241", "amol23@gmail.com");
     let person3 = new Person("Vibha", "Joshi", "Mudhol", "Gadag", "Karnatak", 444002, "91 8540355241", "vibha15@gmail.com");
 
-
     addPerson(person1);
     addPerson(person2);
     addPerson(person3);
