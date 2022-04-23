@@ -165,8 +165,10 @@ function findPersonCityOrState(locationField, location) {
     switch (locationField) {
         case "city":
             console.log(personArray.filter(person => person.city == location));
+            console.log("Number of conatcts in " + location + " is = " + personArray.filter(person => person.city == location).reduce(count => count + 1, 0));
         case "state":
             console.log(personArray.filter(person => person.state == location));
+            console.log("Number of conatcts in " + location + " is = " + personArray.filter(person => person.state == location).reduce(count => count + 1, 0));
     }
 }
 
@@ -174,6 +176,7 @@ try {
     let person1 = new Person("Kiran", "Hulawale", "Pune", "Pune", "Maharashtra", 411027, "91 9878909876", "kiran12@gmail.com");
     let person2 = new Person("Amol", "Sonar", "Solapur", "Solapur", "Maharashtra", 422032, "91 8540355241", "amol23@gmail.com");
     let person3 = new Person("Vibha", "Joshi", "Mudhol", "Gadag", "Karnatak", 444002, "91 8540355241", "vibha15@gmail.com");
+
 
     addPerson(person1);
     addPerson(person2);
