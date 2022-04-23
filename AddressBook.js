@@ -189,6 +189,7 @@ try {
     deletePerson("Vibha", "Joshi");
     console.log("Number of People in the address book is " + personArray.reduce(count => count + 1, 0));
     findPersonCityOrState("city", "Pune");
+    console.log("Sorted address book by first name:\n" + personArray.sort());
 } catch (Exception) {
     console.log(Exception)
 }
